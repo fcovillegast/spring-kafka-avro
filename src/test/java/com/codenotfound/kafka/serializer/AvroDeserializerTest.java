@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import javax.xml.bind.DatatypeConverter;
 
+import example.avro.User;
 import org.junit.Test;
 
 public class AvroDeserializerTest {
