@@ -4,7 +4,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.concurrent.TimeUnit;
 
-import example.avro.User;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Test;
