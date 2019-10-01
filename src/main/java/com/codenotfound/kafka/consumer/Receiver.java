@@ -2,6 +2,7 @@ package com.codenotfound.kafka.consumer;
 
 import java.util.concurrent.CountDownLatch;
 
+import example.avro.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
@@ -18,7 +19,7 @@ public class Receiver {
   }
 
   @KafkaListener(topics = "${kafka.topic.avro}")
-  public void receive(SecurityProperties.User user) {
+  public void receive(User user) {
     LOGGER.info("received user='{}'", user.toString());
     latch.countDown();
   }
