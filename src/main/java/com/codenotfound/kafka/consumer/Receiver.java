@@ -2,6 +2,7 @@ package com.codenotfound.kafka.consumer;
 
 import java.util.concurrent.CountDownLatch;
 
+import example.avro.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
