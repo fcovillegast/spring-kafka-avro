@@ -4,7 +4,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.concurrent.TimeUnit;
 
-import example.avro.User;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Test;
@@ -55,4 +54,6 @@ public class SpringKafkaApplicationTest {
     receiver.getLatch().await(10000, TimeUnit.MILLISECONDS);
     assertThat(receiver.getLatch().getCount()).isEqualTo(0);
   }
+
+
 }
